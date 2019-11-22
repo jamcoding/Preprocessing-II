@@ -1,22 +1,5 @@
-.buttons {
-  font-size: 1.8rem;
-  color: #212529;
-  background-color: #1596aa;
-  border: 1px solid #C0C0C0;
-  border-radius: 10px;
-  padding: 10px;
-  color: #FFFFFF;
-  text-align: center;
-  width: 80%;
-}
-@media (max-width: 500px) {
-  .buttons {
-    width: 100%;
-  }
-}
 .btn {
   font-size: 1.8rem;
-  color: #212529;
   background-color: #1596aa;
   border: 1px solid #C0C0C0;
   border-radius: 10px;
@@ -25,10 +8,15 @@
   text-align: center;
   width: 80%;
 }
-@media (max-width: 500px) {
+@media (max-width: 680px) {
   .btn {
     width: 100%;
   }
+}
+.btn:hover {
+  background-color: #17A2B8;
+  box-shadow: 0px 0px 5px #17A2B8;
+  border: 1px solid #17A2B8;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -172,7 +160,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+label {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
@@ -200,7 +189,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 840px) {
   .container {
     width: 95%;
   }
@@ -220,7 +209,7 @@ nav a {
 nav a:first-child {
   width: 50%;
 }
-@media (max-width: 500px) {
+@media (max-width: 840px) {
   nav a:first-child {
     width: 100%;
     text-align: center;
@@ -248,7 +237,7 @@ nav a:first-child {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   .home .content-section .text-content {
     width: 100%;
     padding: 0%;
@@ -262,12 +251,12 @@ nav a:first-child {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   .home .content-section .img-content img {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   .home .content-section .img-content {
     width: 100%;
     padding: 0%;
@@ -309,6 +298,7 @@ nav a:first-child {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -318,10 +308,34 @@ nav a:first-child {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 680px) {
   .home .content-pick .destination {
-    width: 80%;
+    width: 75%;
     margin: 20px auto;
+  }
+}
+.home .content-contact {
+  padding: 30px 0;
+}
+.home .content-contact input[type="text"],
+.home .content-contact textarea {
+  width: 100%;
+  color: #212529;
+  font-size: 1.3rem;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+.home .content-contact h4 {
+  margin-top: 10px;
+}
+.home .content-contact .btn {
+  width: 15%;
+}
+@media (max-width: 500px) {
+  .home .content-contact .btn {
+    width: 100%;
   }
 }
 header {
